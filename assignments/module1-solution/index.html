@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="LunchCheck">
+        <head>
+                <meta charset="UTF-8">
+                <title>Lunch Checker</title>
+                <link rel=icon href=favicon.ico>
+                <link rel="stylesheet"
+                <link rel="stylesheet" href="styles/bootstrap.min.css">
+                <meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no">
+                <link href="styles/style.css" rel="stylesheet">
+                <link href="styles/bird.css" rel="stylesheet">
+        </head>
+        <body>
+                  <div class="lunchItems container" ng-controller="LunchCheckController">
+                          <h1>Lunch Check</h1>
+                          <form>
+                          <div class="form-group">
+                          <input class="form-control"
+                                 ng-class="answerType"
+                                 type="text"
+                                 placeholder="type in lunch items one by one separated by comma"
+                                 ng-model="lunchList">
+                          <details open="true">
+                            <summary><b>Note:</b></summary>
+                            <p>Empty commas are not counted as an item and will be removed up on check click</p>
+                            <pre>form = {{lunchList | json}}</pre>
+                          </details>
+                          </div>
+                          <div class="form-group">
+                          <button type="submit"
+                                  ng-click="checkLunchList()"
+                                  class="btn btn-{{buttonType}}">
+                                  Check If Too Much
+                          </button>
+                          <button type="submit"
+                                  ng-click="clear()"
+                                  class="btn btn-warning">
+                                  CLEAR
+                          </button>
+                          </div>
+                          <h3 ng-class="answerType">{{responseMessage}}</h3>
+                          </form>
+                  </div>
+                  <div id="pictureframe">
+                    <div id="bird">
+                      <div id="body2"></div>
+                      <div id="body1"></div>
+                      <div id="wing-l"></div>
+                      <div id="wing-r"></div>
+                    </div>
+                    <div id="shadow"></div>
+                  </div>
+                  <script src="scripts/angular.min.js"></script>
+                  <script src="scripts/app.js"></script>
+        </body>
+     <footer>
+       <div>
+        Copyright &copy; 2016 Zoran Mrakovic.  All rights reserved.
+       </div>
+     </footer>
+</html>

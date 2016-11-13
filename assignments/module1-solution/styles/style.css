@@ -1,0 +1,42 @@
+.positive
+{
+        color: green;
+        border-color: green;
+}
+
+.negative
+{
+        color: red;
+        border-color: red;
+}
+
+input[type=text]
+{
+  color: black;
+}
+
+details{
+float: right;
+
+}
+
+summary{
+  outline:none;
+}
+
+.container{
+  margin: 30px 30px;
+}
+
+body{
+  background-color: #FFFAF0;
+}
+
+footer {
+  background-color: #DCDCDC;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+}
