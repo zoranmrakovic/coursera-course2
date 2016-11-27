@@ -15,6 +15,10 @@
     controller.doBuy = function(index) {
       ShoppingListCheckOffService.doBuy(index);
     }
+    
+    controller.removeItem = function(index) {
+      ShoppingListCheckOffService.removeItem(index);
+    }
   }
 
   AlreadyBoughtShoppingController.$inject = ['ShoppingListCheckOffService'];
@@ -46,6 +50,10 @@
 
     this.getBoughtItems = function() {
       return boughtItems;
+    }
+    
+    this.removeItem = function (index) {
+            toBuyItems.splice(index, 1);
     }
   }
 
