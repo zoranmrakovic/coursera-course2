@@ -1,0 +1,27 @@
+<ul>
+<li><a ui-sref="home">Home</a></li>
+<li><a class="active" ui-sref="mainList">Back to categories</a></li>
+</ul>
+<div id="lunch"> 
+   <strong>{{ itemdetail.category }} ({{itemdetail.menuItems.length}} products)</strong> 
+</div>
+
+<!-- <ol>
+  <li ng-repeat="itemL in itemdetail.menuItems">
+    <div><strong>Item name:</strong> {{ itemL.name }}</div>
+    <div><strong>Item short name:</strong> {{ itemL.short_name }}</div>
+    <div><strong>Item description: </strong>{{ itemL.description }}</div>
+  </li>
+</ol> -->
+<table class="center">
+  <tr>
+    <th>Name</th>
+    <th>Short Name</th>
+    <th>Description</th>
+  </tr>
+  <tr id="item" ng-repeat="itemL in itemdetail.menuItems">
+    <td>{{ itemL.name }}</td>
+    <td>{{ itemL.short_name }}</td>
+    <td>{{ itemL.description }}</td>
+  </tr>
+</table>

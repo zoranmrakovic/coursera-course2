@@ -1,0 +1,14 @@
+<!-- <ul>
+  <li ng-repeat="item in $ctrl.items" ui-sref="itemDetail({categoryID:item.short_name})">
+    {{item.short_name}} : {{ item.name }}
+  </li>
+</ul> -->
+
+<table class="center">
+  <tr>
+    <th>Menu Categories</th>
+  </tr>
+  <tr id ="menu" ng-repeat="item in $ctrl.items" ui-sref="itemDetail({categoryID:item.short_name})">
+    <td>{{item.short_name}} : {{ item.name }}</td>
+  </tr>
+</table>

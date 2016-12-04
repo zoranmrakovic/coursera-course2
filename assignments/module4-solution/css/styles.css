@@ -1,0 +1,168 @@
+body {
+  font-size: 1.2em;
+  background-color: lightblue;
+}
+
+h1 {
+  font-size:2em;
+  text-align: center;
+}
+
+a[ui-sref]:hover {
+  display: inline-block;
+  border: solid black 1px;
+  background-color: red;
+}
+
+div#lunch {
+  display: inline-block;
+/*  border: solid steelblue 2px;*/
+  float: right;
+  cursor: not-allowed;
+  margin-right: 110px;
+
+  }
+
+.error {
+  color: red;
+  font-weight: bold;
+  display: none;
+}
+
+.loading-icon {
+  position: absolute;
+  left: 50%;
+  top: 10px;
+}
+
+li[ui-sref]:hover {
+
+  display: inline-block;
+  cursor: pointer;
+  border: solid black 1px;
+  margin-top: 10px;
+  background-color: steelblue;
+
+}
+
+.gridStyle {
+    border: 1px solid rgb(212,212,212);
+    width: 400px;
+    height: 300px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    border: 1px solid rgb(212,212,212);
+}
+
+table.center {
+   margin-left:80px;
+   margin-right:80px;
+ }
+
+#menu {
+   cursor: pointer;
+ }
+
+ #item {
+  cursor: not-allowed;
+ }
+
+th {
+    background-color: steelblue;
+    color: white;
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+tr:hover {background-color: steelblue}
+
+.loading-icon {
+  position: absolute;
+  left: 20%;
+  top: 220px;
+}
+
+table, th, td {
+   border: 1px solid black;
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    display: inline-block;
+}
+
+li {
+    float: left;
+    border-right:1px solid #bbb;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: red;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+
+
+//Hello
+
+@import url(https://fonts.googleapis.com/css?family=Khula:700);
+body.home {
+  background: #111;
+}
+.hidden {
+  opacity:0;
+}
+.console-container {
+ 
+  font-family:Khula;
+  font-size:2em;
+  text-align:center;
+  height:200px;
+  width:700px;
+  display:inline-block;
+  position:absolute;
+  color:white;
+  top:10%;
+  bottom:0;
+  left:30%;
+  right:0;
+
+}
+.console-underscore {
+  display:inline-block;
+  position:relative;
+  top:-0.14em;
+  left:10px;
+}
